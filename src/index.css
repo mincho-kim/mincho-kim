@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Academic Minimalist Design System
+   Palette: Warm whites, natural beige, deep charcoal
+   Typography: Clean sans-serif with refined spacing
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Warm off-white background */
+    --background: 40 20% 98%;
+    --foreground: 30 10% 12%;
+
+    /* Cards with subtle warmth */
+    --card: 40 30% 96%;
+    --card-foreground: 30 10% 12%;
+
+    --popover: 40 20% 98%;
+    --popover-foreground: 30 10% 12%;
+
+    /* Primary: Deep charcoal */
+    --primary: 30 10% 12%;
+    --primary-foreground: 40 20% 98%;
+
+    /* Secondary: Natural beige */
+    --secondary: 35 25% 91%;
+    --secondary-foreground: 30 10% 20%;
+
+    /* Muted: Warm gray */
+    --muted: 35 15% 93%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Accent: Warm tan */
+    --accent: 32 30% 85%;
+    --accent-foreground: 30 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 30 10% 12%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --text-body: 30 8% 35%;
+    --text-caption: 30 6% 55%;
+    --beige-warm: 35 35% 88%;
+    --beige-light: 38 40% 94%;
+    
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 30 10% 10%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 30 10% 8%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 40 20% 95%;
+    --primary-foreground: 30 10% 8%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 40 15% 85%;
+
+    --muted: 30 8% 20%;
+    --muted-foreground: 35 10% 60%;
+
+    --accent: 32 15% 25%;
+    --accent-foreground: 40 20% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 40 20% 80%;
+
+    --text-body: 35 10% 70%;
+    --text-caption: 30 8% 55%;
+    --beige-warm: 32 15% 22%;
+    --beige-light: 35 12% 15%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight text-foreground;
+  }
+
+  p {
+    @apply leading-relaxed;
+    color: hsl(var(--text-body));
+  }
+}
+
+@layer utilities {
+  .text-body {
+    color: hsl(var(--text-body));
+  }
+
+  .text-caption {
+    color: hsl(var(--text-caption));
+  }
+
+  .bg-beige-warm {
+    background-color: hsl(var(--beige-warm));
+  }
+
+  .bg-beige-light {
+    background-color: hsl(var(--beige-light));
+  }
+
+  .border-beige {
+    border-color: hsl(var(--beige-warm));
+  }
+
+  /* Refined link underline animation */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-px bg-foreground transition-all duration-300 ease-out;
+  }
+
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply w-12 h-px bg-border;
+  }
+}
