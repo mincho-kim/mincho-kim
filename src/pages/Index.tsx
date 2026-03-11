@@ -55,7 +55,10 @@ const Index = () => {
             <p className="leading-relaxed text-justify">
               I study how various transitional justice mechanisms including domestic trials, truth commissions, 
               and the International Criminal Court shape political violence-related decisions in post-conflict and post-democratization contexts.  
-              
+            </p>
+            <p className="leading-relaxed text-justify">
+              I also serve as the Replication Assistant for <em>International Studies Quarterly</em>, 
+              where I verify the statistical results of manuscripts.
             </p>
             <p className="leading-relaxed text-justify">
               Prior to University at Buffalo, I received my M.A. in International Area Studies from Seoul National University 
