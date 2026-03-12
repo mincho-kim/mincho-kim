@@ -21,6 +21,12 @@ const papers = [
     abstract:
       "Does transitional justice improve human rights in the country after the transition? Existing studies show opposing empirical results for this relationship. I argue that the timing of transitional justice implementation conditions its effect on human rights practices because of how the passage of timing impacts deterrence, demands for change, and backlash through memory. While previous studies consider timing because of how it might change the institutional capacity or consolidated democratic norms, I argue that we should focus on memory that has a more direct connection with the passage of time. In doing so, I build upon the existing theory of how transitional justice impacts human rights by theorizing how memory that fades with time interacts with the mechanisms of deterrence, demands for change, and backlash. Using a sample of 112 countries transitioning from either conflict or authoritarian rule between 1981 and 2012, the empirical test shows that in both post-democratization and conflict contexts, domestic trials have a negative impact on human rights when implemented immediately after transition, with the effect dissipating after 4 to 5 years.",
   },
+ {
+    title: "The Effects of the International Criminal Court on Foreign Aid Flows",
+    tag: "(Dissertation)",
+    abstract:
+      "Can the International Criminal Court (ICC) affect foreign aid flows? While existing studies have examined how ICC ratification and involvement shape human rights practices, civil conflict, and economic sanctions, little attention has been given to their effect on foreign aid. This paper fills this gap by investigating how joining the ICC by ratifying the Rome Statute and being a target of various ICC activities, including preliminary examinations, investigations, warrants, and trials, can influence a country’s foreign aid receipt. Specifically, this paper argues that while ratifying the Rome Statue can increase foreign aid receipt by signaling a state’s commitment to human rights, democratic norms, and stability, being targeted by the ICC can decrease the aid inflow by damaging a state’s reputation and signaling instability. I test these theoretical claims using a sample of 127 countries between 2002 and 2022. By doing so, this paper contributes to research on the human rights-related determinants of international economic flows and to the growing literature on the effects of the ICC.",
+  },
 ];
 
 const Research = () => {
